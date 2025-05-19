@@ -14,9 +14,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          dockerfile: Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/${{ github.repository_name }}:latest 
-          image_name: ghcr.io/${{ github.repository_owner }}/${{ github.repository_name }}  
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GHCR_TOKEN }}
+          tags: ghcr.io/${{ github.repository_owner }}/test-service:latest 
