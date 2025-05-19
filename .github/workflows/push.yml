@@ -15,4 +15,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/tokugero/test-service:latest 
+          tags: ghcr.io/tokugero/test-service:latest
+          github-token: ${{ secret.GITHUB_TOKEN }}
